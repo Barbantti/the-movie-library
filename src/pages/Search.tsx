@@ -40,7 +40,7 @@ const Search = () => {
 
   useEffect(() => {
     if (query) {
-      const searchWithQueryURL = `${searchURL}?query=${query}&${apiKey}`;
+      const searchWithQueryURL = `${searchURL}?query=${query}&api_key=${apiKey}`;
       getSearchedMovies(searchWithQueryURL);
     } else {
       setLoading(false);

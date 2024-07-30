@@ -44,7 +44,7 @@ const Movie = () => {
 
   useEffect(() => {
     if (id) {
-      const movieUrl = `${movieURL}${id}?${apiKey}`;
+      const movieUrl = `${movieURL}${id}?api_key=${apiKey}`;
       getMovie(movieUrl).catch((err) => console.error(err.message));
     }
   }, [id]);
